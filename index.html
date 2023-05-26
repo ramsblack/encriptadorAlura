@@ -6,19 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="caja">
-            <h1>
-                <img src="./imagenes/Logo.png" alt="Logo Alura">
-            </h1>
-        </div>
-
+          <img class="logoAlura" src="./imagenes/Logo.png" alt="Logo Alura">  
     </header>
     <main>
-
+        <section>
+            <textarea cols="30" rows="10" class="textoEncrip" placeholder="Ingrese texto aqui"></textarea>    
+            <div>
+                <h2 class="info">Solo letras en mpinusculas y sin acentos</h2>
+            </div>
+            <div class="botones">
+                <input type="submit" value="Encriptar" class="btnEncriptar">
+                <input type="submit" value="Desencriptar" class="btnDesemcriptar">
+            </div>
+        </section>
+        <section>
+            <textarea class="textResult" cols="20" rows="10"></textarea>
+            <div>
+                <input type="submit" value="Copiar" class="btnCopiar">
+            </div>
+        </section>
+        
     </main>
     <footer>
 

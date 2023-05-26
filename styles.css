@@ -1,18 +1,48 @@
 body{
     background: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+    overflow-y: hidden;
 
 }
 
-header{
-    width: 60%;
-    padding: 5px 0;
+.logoAlura{
+    padding-top: 10px;
+    margin: 0 0 0 10px;
+    width: 10%;
 }
 
-.caja{
+main{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.textoEncrip{
+    width: 577px;
+    height: 48px;
+    padding: 2px;
+    font-family: 'Inter', sans-serif;
+    text-transform: lowercase;
+    font-size: 32px;
+    border: none;
+    color: #0A3871;
+    background-color: #E5E5E5;
+
+}
+::placeholder{
+    color: #0A3871;
+
+}
+
+.botones{
+    background-color: chartreuse;
+    width: 40%;
     position: relative;
-    align-items: flex-start;
-    width: 20%;
-    padding: 10px;
-    margin: 0 0;
+    margin-top: 80%;
+    margin-left: 20px;
 }
+
+
+
+
 
