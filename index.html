@@ -7,33 +7,32 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Encriptador Alura</title>
 </head>
 <body>
     <header>
           <img class="logoAlura" src="./imagenes/Logo.png" alt="Logo Alura">  
     </header>
     <main>
-        <section>
+        <section class="seccionEncriptar">
             <textarea cols="30" rows="10" class="textoEncrip" placeholder="Ingrese texto aqui"></textarea>    
             <div>
-                <h2 class="info">Solo letras en mpinusculas y sin acentos</h2>
+                <h2 class="info"> <span>&#128712;</span> Solo letras en minúsculas y sin acentos</h2>
             </div>
             <div class="botones">
-                <input type="submit" value="Encriptar" class="btnEncriptar">
-                <input type="submit" value="Desencriptar" class="btnDesemcriptar">
+                <input type="submit" value="Encriptar" class="btnEncriptar" onclick="validarTexto()">
+                <input type="submit" value="Desencriptar" class="btnDesencriptar">
             </div>
         </section>
-        <section>
-            <textarea class="textResult" cols="20" rows="10"></textarea>
-            <div>
-                <input type="submit" value="Copiar" class="btnCopiar">
-            </div>
-        </section>
+        <ul class="SeccionResultado">
+            <li>
+                <img class="imgMuneco" src="./imagenes/Muñeco.png" alt="Muñeco Search">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>                
+            </li>
+        </ul>
         
     </main>
-    <footer>
-
-    </footer>
+    <script src="/script.js"></script>
 </body>
 </html>
