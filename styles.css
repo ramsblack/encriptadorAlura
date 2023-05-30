@@ -20,11 +20,11 @@ header{
 }
 
 .seccionEncriptar{
-    width: 864px;
+    width: 580px;
     height: 960px;
-    margin-left: 240px;
+    margin-left: 10%;
     margin-bottom: 5px;
-    margin-top: 168px;
+    margin-top: 100px;
 }
 
 .textoEncrip{
@@ -35,6 +35,8 @@ header{
     text-transform: lowercase;
     font-size: 32px;
     border: none;
+    resize: none;
+    outline: 0 none;
     color: #0A3871;
     background-color: #E5E5E5;
 
@@ -49,7 +51,8 @@ header{
     position: absolute;
     width: 270px;
     height: 10px;  
-    top:851px; 
+    top:520px;
+    left: 10%; 
     font-size: small;
 
 }
@@ -60,7 +63,8 @@ header{
 
 .botones{
     position: absolute;
-    top: 885px;  
+    top: 539px;
+    left: 10%;  
     
 }
 
@@ -99,7 +103,7 @@ header{
 
 .SeccionResultado{
     margin-top: 20px;
-    margin: 0 auto;
+    margin-left: 200px;
     width: 400px;
     height: 600px;
     padding: 10px;
@@ -110,7 +114,7 @@ header{
     display: inline-block;
     text-align: center;
     vertical-align: top;
-    height: 944px;
+    height: 600px;
     margin: 0 auto;
     padding: 30px 20px;
     border-radius: 32px;
@@ -121,21 +125,43 @@ header{
     
 }
 
+#textoResultado{
+    position: relative;
+    margin: 5px;
+    height: 50px;
+    text-align: center;
+    font-size: 32px;
+
+}
+
 .SeccionResultado img{
     position: relative;
-    margin-top: 60%;
 }
 
 .SeccionResultado h2{
     font-size: 24px;
     font-weight: bold;
     color: #343A40;
-    margin: 30px 20px;
+    margin: 20px 20px;
 
 }
 
  .btnCopiar{
-    margin: 80% auto;
-    width: 120px;
+    position: relative;
+    top: 77%;
+    justify-content: end;
+    width: 336px;
+    height: 67px;
+    border: 0.5px solid #0A3871 ;
+    border-radius: 24px;
+    color: #0A3871;
+    background-color: #D8DFE8;
+    transition: 1s all;
+
     
+}
+.btnCopiar:hover{
+    transform: scale(1.0);
+    color:#D8DFE8;
+    background-color: #0A3871;
 }
