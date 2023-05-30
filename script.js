@@ -22,9 +22,40 @@ function encriptar(){
     }
 }
 
-function btncopiar(){
-    let copiarTexto = document.getElementById("textoResultado").value;
-    navigator.clipboard.writeText(copiarTexto);
-    alert("Texto Copiado");
+function copiarTexto() {
+    var elemento = document.getElementById("textoResultado");
+    var Temp = document.createElement("input");
+    
+    Temp.value = elemento.innerText;
+    document.body.appendChild(Temp);
+    Temp.select();
+    
+    document.execCommand("copy");
+    
+    document.body.removeChild(Temp);
+    
+
+    alert("El texto se ha copiado al portapapeles");
+  }
+
+  function desEncriptar(){
+    
+    let texto = document.querySelector(".textoEncrip").value;
+    if (texto == ""){
+        alert("El capo no puede estar vacio");
+    } else{
+        let textoEncript = texto.replaceAll("enter", "e").replaceAll("imes", "i").replaceAll("ai", "a").replaceAll("ober", "o").replaceAll("ufat", "u")
+        console.log(textoEncript);
+
+        document.getElementById("textoResultado").innerHTML = textoEncript;
+        document.getElementById("immuneco").style.display = 'none';
+        document.getElementById("btncopiar").style.display = 'inline';
+        document.getElementById("textoNoEncontrado").style.display = 'none';
+        document.getElementById("textoNoEncontrado2").style.display = 'none';
+
+
+    }
 }
+
+
   
